@@ -10,3 +10,18 @@ docker tag node-server kimras/simple-container-app
 #Push to Docker Hub
 docker push kimras/simple-container-app
 
+
+
+----- K8s server ----
+curl -O https://raw.githubusercontent.com/kim-ras-sn/simple-container-app/main/simple-container-app-deployment.yaml
+
+kubectl apply -f simple-container-app-deployment.yaml
+
+
+
+
+
+
+
+
+ kubectl apply -f "${curl -l https://raw.githubusercontent.com/kim-ras-sn/simple-container-app/main/simple-container-app-deployment.yaml}"
