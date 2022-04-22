@@ -1,0 +1,22 @@
+{
+  "name": "simpel-container-app",
+  "version": "1.0.0",
+  "description": "This repository is a simple Node js container with a web site and eventually will be extended to have alittle more functionality.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kim-ras-sn/simple-container-app.git"
+  },
+  "author": "Kim Rasmussen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kim-ras-sn/simple-container-app/issues"
+  },
+  "homepage": "https://github.com/kim-ras-sn/simple-container-app#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

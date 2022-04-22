@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(176, 225, 206);
+    font-family: verdana;
+    font-size: 20px;
+    color: #293e40;
+}
+  
+div {
+    text-align: center;
+}
+
+asp {
+    text-align: center;
+}
+
+#error {
+    color: red;
+    size: 20px;
+} 
