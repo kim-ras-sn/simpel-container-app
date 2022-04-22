@@ -1,0 +1,12 @@
+#Build
+docker build -t node-server .
+
+#Test
+docker run -d -p 8080:8080 node-server
+
+#Register
+docker tag node-server kimras/simple-container-app
+
+#Push to Docker Hub
+docker push kimras/simple-container-app
+

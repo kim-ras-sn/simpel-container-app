@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-container-app-deployment
+  labels:
+    app: simple-container-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-container-app
+  template:
+    metadata:
+      labels:
+        app: simple-container-app 
+    spec:
+      containers:
+      - name: simple-container-app
+        image: kimras/simple-container-app
+        ports:
+        - containerPort: 8080
