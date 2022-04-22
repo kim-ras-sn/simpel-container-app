@@ -17,11 +17,11 @@ curl -O https://raw.githubusercontent.com/kim-ras-sn/simple-container-app/main/s
 
 kubectl apply -f simple-container-app-deployment.yaml
 
+curl -O https://raw.githubusercontent.com/kim-ras-sn/simple-container-app/main/simple-container-app-service.yaml
 
+kubectl apply -f simple-container-app-service.yaml 
 
-
-
-
+-----
 
 
  kubectl apply -f "${curl -l https://raw.githubusercontent.com/kim-ras-sn/simple-container-app/main/simple-container-app-deployment.yaml}"
