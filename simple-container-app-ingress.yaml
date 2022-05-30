@@ -9,8 +9,8 @@ metadata:
     - path: /simple
       backend:
         serviceName: simple-container-service
-        servicePort: 80
+        servicePort: 5000
       - path: /
         backend:
           serviceName: simple-container-service
-          servicePort: 80
+          servicePort: 5000
