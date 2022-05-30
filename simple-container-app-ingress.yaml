@@ -5,6 +5,10 @@ metadata:
   annotations:
     ingress.kubernetes.io/rewrite-target: /
 spec:
+  defaultBackend:
+    resource:
+      serviceName: simple-container-service
+      servicePort: 31110
   rules:
   - http:
     paths:
