@@ -11,8 +11,8 @@ spec:
     - path: /simple
       backend:
         serviceName: simple-container-service
-        servicePort: 5000
+        servicePort: 31110
     - path: /app
       backend:
         serviceName: simple-container-service
-        servicePort: 5000
+        servicePort: 31110
