@@ -9,7 +9,7 @@ spec:
       port:
         number: 31110
   rules:
-  - host: *
+  - host: 
     http:
       paths:
       - path: /simple
