@@ -9,18 +9,17 @@ spec:
       port:
         number: 31110
   rules:
-  - host: foo.bar.com
-    http:
+  - http:
       paths:
-      - path: /simple
-        pathType: Prefix
+      - pathType: Prefix 
+        path: /simple
         backend:
           service:
             name: simple-container-service
             port:
               number: 31110
-      - path: /app
-        pathType: Prefix
+      - pathType: Prefix
+        path: /app
         backend:
           service:
             name: simple-container-service
