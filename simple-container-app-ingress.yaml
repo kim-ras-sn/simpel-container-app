@@ -2,15 +2,15 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: simple-ingress
-  spec:
-    rules:
-    - http:
+spec:
+  rules:
+  - http:
     paths:
     - path: /simple
       backend:
         serviceName: simple-container-service
         servicePort: 5000
-      - path: /
-        backend:
-          serviceName: simple-container-service
-          servicePort: 5000
+    - path: /
+      backend:
+        serviceName: simple-container-service
+        servicePort: 5000
