@@ -17,7 +17,7 @@ spec:
           service:
             name: simple-container-service
             port:
-              number: 31110
+              number: 5000
       - pathType: Prefix
         path: /app
         backend:
