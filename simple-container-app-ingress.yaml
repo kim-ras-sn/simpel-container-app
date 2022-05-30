@@ -8,7 +8,7 @@ spec:
   defaultBackend:
     service:
       name: simple-container-service
-      port
+      port:
         number: 31110
   rules:
   - http:
