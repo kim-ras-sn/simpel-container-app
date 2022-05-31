@@ -3,11 +3,13 @@ kind: Ingress
 metadata:
   name: simple-ingress
 spec:
+  #Needed for AKS
+  ingressClassName: nginx
   defaultBackend:
     service:
       name: simple-container-service
       port:
-        number: 31110
+        number: 5000
   rules:
   - http:
       paths:
@@ -24,4 +26,4 @@ spec:
           service:
             name: simple-container-service
             port:
-              number: 31110
+              number: 5000
