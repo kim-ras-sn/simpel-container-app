@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: simple-container-service
+  labels: 
+    k8s-app : simple-container-app
 spec:
   selector:
     app: simple-container-app 
